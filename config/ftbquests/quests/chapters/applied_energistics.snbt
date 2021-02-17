@@ -1,0 +1,94 @@
+{
+	id: 17,
+	filename: "applied_energistics",
+	order_index: 2,
+	title: "Applied Energistics",
+	icon: "appliedenergistics2:interface_terminal",
+	default_quest_shape: "circle",
+	quests: [
+		{
+			x: -2.0d,
+			y: 0.0d,
+			dependencies: [I;
+				23,
+				22
+			],
+			id: 18,
+			tasks: [{
+				id: 19,
+				type: "item",
+				item: "appliedenergistics2:controller"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -1.5d,
+			dependencies: [I;
+				18,
+				19
+			],
+			id: 20,
+			tasks: [{
+				id: 21,
+				type: "item",
+				item: {
+					id: "appliedenergistics2:1k_storage_cell",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 0.0d,
+			id: 22,
+			tasks: [{
+				id: 23,
+				type: "item",
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 1.5d,
+			dependencies: [I;
+				18,
+				19
+			],
+			id: 24,
+			tasks: [{
+				id: 25,
+				type: "item",
+				item: "appliedenergistics2:drive"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			dependencies: [I;
+				20,
+				24
+			],
+			id: 26,
+			tasks: [{
+				id: 27,
+				type: "item",
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 0.0d,
+			dependencies: [I;
+				26,
+				27
+			],
+			id: 28,
+			tasks: [{
+				id: 29,
+				type: "item",
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+		}
+	]
+}
